@@ -1,0 +1,33 @@
+.dock-items {
+    width: 2.5rem; /* Equivalente a w-10 */
+    height: 2.5rem; /* Mantenemos un aspecto cuadrado */
+    border-radius: 50%; /* Equivalente a rounded-full */
+    background-color: #bdbdbd; /* Equivalente a bg-gray-400 */
+  }
+
+.dock-container{
+    background-color: rgba(255, 255, 255, 0.55);
+    position: fixed;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    align-items: flex-end;
+    border-radius: 3rem; /* Para redondear las esquinas */
+    padding: 0.3rem; /* Ajusta el valor según tus necesidades */
+    margin: 0.75rem; /* Ajusta el valor según tus necesidades */
+    height: 48px;
+    box-sizing: content-box;
+    will-change: contents;
+    gap: 4px;
+    z-index: 1;
+    backdrop-filter: blur(5px);
+}
+
+.dock-img{
+    width: 50%;
+    height: 50%;
+    transform: 'translateY(12px) scale(1.25)'
+}
+
+.dock-img:hover{
+}
