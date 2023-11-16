@@ -27,12 +27,12 @@ const Navbar = () => {
             </Link>
           </DockItem>
           <DockItem>
-            <Link href='/craft'>
+            <Link href='/work'>
               <GradientCard src={brush} />
             </Link>
           </DockItem>
           <DockItem>
-            <Link href='/work'>
+            <Link href='/craft'>
               <GradientCard src={lightbolt} />
             </Link>
           </DockItem>

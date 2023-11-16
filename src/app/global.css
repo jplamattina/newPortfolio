@@ -8,3 +8,11 @@ html, body{
     overflow: hidden;
     background: grey;
 }
+
+.container{
+    width: 100%;
+    height: 100%;
+    background-color: #FCF7E8;
+    display:flex;
+    justify-content: center;
+}

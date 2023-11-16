@@ -4,7 +4,7 @@ const Craft = () => {
   return (
     <main>
       <div className='AboutBox'>
-        <h1>craft</h1>
+        <h1>asdsadsad</h1>
       </div>
     </main>
   )
