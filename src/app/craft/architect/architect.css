@@ -1,0 +1,129 @@
+.container-architect{
+    width: 100%;
+    height: 100%;
+    background-color: #FCF7E8;
+    display:flex;
+    justify-content: center;
+}
+
+.viewport-container-architect{
+    width: 100rem;
+    height: 93%;
+  }
+
+  .main-header-architect{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0.2rem;
+    width: 100%;
+    background-color: blue;
+  }
+
+  .color-text{
+    font-size:30px;
+    color: black
+  }
+
+  .main-architect-container{
+    width: 100%;
+    height: 100%;
+    border-radius: 22px;
+    background-color: rgb(131, 138, 136);
+  }
+
+  .main-architect-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+   
+  .circle-background-architect {
+    width: 850px;
+    height: 850px;
+    background-color: #42c5bf;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .handleFace {
+    width: 800px;
+    height:900px;
+    margin-top: 25vh;
+    transform: scaleX(-1);
+  }
+
+   .top-section-architect{
+    width: 100%;
+    height: 15%;
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px auto;
+  }
+  .title-number-1 {
+    width: 35%;
+    height: 100%;
+    font-size: 150px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#403C3C;
+    vertical-align: text-bottom;
+    margin-top: 72px
+  }
+
+  .title-number-2 {
+    width: 65%;
+    height: 100%;
+    font-size: 250px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color:#403C3C;
+  }
+
+  .face-section-container{
+    width: 78%;
+    background-color: rgb(52, 175, 134);
+    display: flex;
+    justify-content: flex-end;
+  }
+  .main-section-face-title {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .description-1 {
+    width: 22%;
+    height: 100%;
+    background-color: red;
+  }
+
+  .principal-title {
+    font-size: 65px;
+  }
+
+  .second-titles {
+    font-size: 45px;
+  }
+
+  .second-titles-descriptions {
+    font-size: 35px;
+  }
+
+.button-about  {
+  color:#403C3C;
+  font-weight: lighter;
+  font-size: 125px;
+}
+
+.link-architect {
+  display: flex;
+}

@@ -1,0 +1,20 @@
+.horizontal-scroll {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    width: 100%; /* Ancho máximo del contenedor */
+    max-width: 800px; /* Ancho máximo del contenedor */
+  }
+  
+  .scroll-link {
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    width: 120px; /* Ancho fijo para cada enlace */
+  }
+  
+  .scroll-link:hover {
+    color: blue;
+  }
+  

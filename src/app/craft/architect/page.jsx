@@ -3,8 +3,8 @@
 import React, { useEffect, useState } from 'react'
 import { Karantina, Roboto } from 'next/font/google'
 import Image from 'next/image'
-import face from './../../assests/face.svg'
-import './craft.css'
+import face from './../../../assests/face.svg'
+import './architect.css'
 import Link from 'next/link'
 
 const karantina = Karantina({
@@ -33,24 +33,24 @@ const Craft = () => {
   }, [])
 
   return (
-    <div className={`container-craft ${karantina.className}`}>
-      <div className={`viewport-container-craft ${roboto.className}`}>
-        <section className='main-header-craft'>
+    <div className={`container-architect ${karantina.className}`}>
+      <div className={`viewport-container-architect ${roboto.className}`}>
+        <section className='main-header-architect'>
           <div className='main-header'>
             <h2 className='color-text'>{formattedTime}</h2>
           </div>
         </section>
-        <main className='main-craft-container'>
-          <section className='top-section-craft'>
-            <div className={`title-number-1  ${karantina.className}`}><h1>Developer</h1></div>
-            <div className={`title-number-2  ${karantina.className}`}><h1>01</h1></div>
+        <main className='main-architect-container'>
+          <section className='top-section-architect'>
+            <div className={`title-number-1  ${karantina.className}`}><h1>Architect</h1></div>
+            <div className={`title-number-2  ${karantina.className}`}><h1>02</h1></div>
           </section>
           <section className='main-section-face-title'>
-            <Link className='link-architect' href='/craft/architect'>
+            <Link className='link-architect' href='/craft'>
               <button className={`button-about ${karantina.className}`}>{'<'}</button>
             </Link>
             <div className='face-section-container'>
-              <div className='circle-background'>
+              <div className='circle-background-architect'>
                 <Image
                   src={face}
                   className='handleFace'
@@ -60,11 +60,11 @@ const Craft = () => {
               </div>
             </div>
             <div className={`description-1  ${karantina.className}`}>
-              <h1 className='principal-title'>+3 YEARS EXP</h1>
+              <h1 className='principal-title'>+5 YEARS EXP</h1>
               <h1 className='second-titles'>EDUCATION</h1>
-              <h2 className='second-titles-descriptions'>IT MASTER ACADEMY</h2>
+              <h2 className='second-titles-descriptions'>UNIVERSIDAD DE BUENOS AIRES</h2>
             </div>
-            <Link className='link-architect' href='/craft/architect'>
+            <Link className='link-architect' href='/craft'>
               <button className={`button-about ${karantina.className}`}>{'>'}</button>
             </Link>
           </section>

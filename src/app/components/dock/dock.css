@@ -1,8 +1,8 @@
 .dock-items {
-    width: 2.5rem; /* Equivalente a w-10 */
-    height: 2.5rem; /* Mantenemos un aspecto cuadrado */
-    border-radius: 50%; /* Equivalente a rounded-full */
-    background-color: #bdbdbd; /* Equivalente a bg-gray-400 */
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background-color: #bdbdbd;
   }
 
 .dock-container{
@@ -12,9 +12,9 @@
     left: 50%;
     transform: translateX(-50%);
     align-items: flex-end;
-    border-radius: 3rem; /* Para redondear las esquinas */
-    padding: 0.3rem; /* Ajusta el valor según tus necesidades */
-    margin: 0.75rem; /* Ajusta el valor según tus necesidades */
+    border-radius: 3rem;
+    padding: 0.3rem;
+    margin: 0.75rem;
     height: 48px;
     box-sizing: content-box;
     will-change: contents;

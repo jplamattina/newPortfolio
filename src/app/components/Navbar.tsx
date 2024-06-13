@@ -40,7 +40,9 @@ const Navbar = () => {
             <GradientCard src={twitter} />
           </DockItem>
           <DockItem>
-            <GradientCard src={mail} />
+            <Link href='/art'>
+              <GradientCard src={mail} />
+            </Link>
           </DockItem>
           <DockItem>
             <GradientCard src={github} />

@@ -15,6 +15,8 @@ const karantina = Karantina({
 
 const Tiles = () => {
   const [showFace, setShowFace] = useState(false)
+  const [animationDisplay, setAnimationDisplay] = useState('disabledFace')
+  const [animationShadowDisplay, setAnimationShadowDisplay] = useState('disabledFace')
   const [resolution, setResolution] = useState('')
   const [time, setTime] = useState(new Date())
 
@@ -37,7 +39,9 @@ const Tiles = () => {
   const formattedTime = clockTime.slice(16, 24)
 
   const handleContactInformation = () => {
-    setShowFace((prevState) => !prevState)
+    setShowFace(!showFace)
+    setAnimationDisplay('handleFaceContactBackPosition')
+    setAnimationShadowDisplay('handleShadowFaceBackPosition')
   }
 
   return (
@@ -59,28 +63,48 @@ const Tiles = () => {
                 </p>
               </section>
               <section className='button-middle-section'>
-                <button className='button-tild-1' onClick={handleContactInformation}>CONTACT</button>
-                <button className='button-tild-1'>INFO</button>
+                <button className='button-tild-1' onClick={handleContactInformation}>CONTACT</button>                <button className='button-tild-1'>INFO</button>
               </section>
             </div>
             <footer className='footer-title-bottom'>
               <h1>DEVELOPER-DEVELOPER-DEVELOPER-DEVELOPER-DEVELOPER</h1>
             </footer>
-            {showFace &&
-              <>
-                <Image
-                  src={faceShadow}
-                  className='handleShadowFace'
-                  id='handleFaceContactId'
-                  alt='contacto'
-                />
-                <Image
-                  src={face}
-                  className='handleFaceContact'
-                  id='handleFaceContactId'
-                  alt='contacto'
-                />
-              </>}
+            {
+              showFace
+                ? (
+                  <>
+                    <Image
+                      src={faceShadow}
+                      className='handleShadowFace'
+                      id='handleFaceContactId'
+                      alt='contacto'
+                    />
+                    <Image
+                      src={face}
+                      className='handleFaceContact'
+                      id='handleFaceContactId'
+                      alt='contacto'
+                    />
+                  </>
+                  )
+                : (
+                  <>
+                    <Image
+                      src={faceShadow}
+                      className={animationShadowDisplay}
+                      id='handleFaceContactId'
+                      alt='contacto'
+                    />
+                    <Image
+                      src={face}
+                      className={animationDisplay}
+                      id='handleFaceContactId'
+                      alt='contacto'
+                    />
+                  </>
+                  )
+            }
+
           </div>
           <div className='tild2 text-align-end grid-col-span-2 '>
             <section>
