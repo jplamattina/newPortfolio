@@ -20,8 +20,8 @@ const karantina = Karantina({
 })
 
 const ThirdJob = ({ onBack }) => {
-  const startDate = new Date('2021-05-17')
-  const todayDate = new Date()
+  const startDate = new Date('2014-03-01')
+  const todayDate = new Date('2019-05-17')
   const yearsDifference = todayDate.getFullYear() - startDate.getFullYear()
 
   const transition = { duration: 1, ease: [0.43, 0.13, 0.23, 0.96] }
@@ -41,8 +41,8 @@ const ThirdJob = ({ onBack }) => {
             </div>
             <div className='toggle-title-card-third-job'>
               <div className='titles-desc'>
-                <h1 className='title-work-thirdJob'>Software Engineer</h1>
-                <h2 className='subtitle-work'>At Accenture</h2>
+                <h1 className='title-work-thirdJob'>Architect</h1>
+                <h2 className='subtitle-work'>At Government  of Buenos Aires</h2>
               </div>
             </div>
             <div className='toggle-button-card-third-job'>
@@ -76,23 +76,14 @@ const ThirdJob = ({ onBack }) => {
               <div className='toggle-description-thirdJob-card'>
                 <ul className='title-description-text'>
                   <li>
-                    <h2 className='job-title'>Software Engineer Analytic - Mayo 2022 - Present</h2>
+                    <h2 className='job-title'>Architect - Feb 2018 - Present</h2>
                     <p className='description-job'>
-                      I am in the development department responsible for the design and
-                      maintenance of the web application for Payroll in North America, including Canada and Puerto Rico.
-                      Member of an internationally distributed team that works applying an agile (Scrum) development.
-                    </p>
-                    <p className='description-job'>
-                      Different technologies and tools to achieve the objectives where needed: Node Js,
-                      React Js, JavaScript, TypeScript, AWS, GitHub, SQL Server,
-                      CSS, HTML, Git, Active Directory and others
-                    </p>
-                  </li>
-                  <li>
-                    <h2 className='job-title'>Software Engineer Associate - Mayo 2021 - Mayo 2022</h2>
-                    <p className='description-job'>
-                      I started at Accenture as a Jr. Software Engineer (full stack)
-                      for the development department.
+                      - Carrying out projects and inspection of work in the
+                      Green Centers.
+                      - Technical assistance to industrial engineers for the
+                      execution of Recycling Plants.
+                      - Execution of detailed plans, calculation and budget,
+                      public tenders, work start protocols, proyect and
                     </p>
                   </li>
                 </ul>

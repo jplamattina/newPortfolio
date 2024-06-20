@@ -98,7 +98,7 @@ const Works = () => {
                 <div className='toggle-title-card'>
                   <div className='titles-desc'>
                     <h1 className='title-work'>TallerV3D</h1>
-                    <h2 className='subtitle-work'>Frontend</h2>
+                    <h2 className='subtitle-work'>Frontend Developer</h2>
                   </div>
                 </div>
                 <div className='toggle-button-card '>

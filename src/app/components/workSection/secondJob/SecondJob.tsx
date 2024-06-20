@@ -20,8 +20,8 @@ const karantina = Karantina({
 })
 
 const SecondJob = ({ onBack }) => {
-  const startDate = new Date('2021-05-17')
-  const todayDate = new Date()
+  const startDate = new Date('2020-05-17')
+  const todayDate = new Date('2021-05-17')
   const yearsDifference = todayDate.getFullYear() - startDate.getFullYear()
 
   const transition = { duration: 1, ease: [0.43, 0.13, 0.23, 0.96] }
@@ -41,8 +41,8 @@ const SecondJob = ({ onBack }) => {
             </div>
             <div className='toggle-title-card-second-job'>
               <div className='titles-desc'>
-                <h1 className='title-work-secondJob'>Software Engineer</h1>
-                <h2 className='subtitle-work'>At Accenture</h2>
+                <h1 className='title-work-secondJob'>Frontend Developer</h1>
+                <h2 className='subtitle-work'>At TallerV3D</h2>
               </div>
             </div>
             <div className='toggle-button-card-second-job'>
@@ -51,6 +51,12 @@ const SecondJob = ({ onBack }) => {
             </div>
           </motion.section>
           {/* 2do Section */}
+          <motion.div
+            initial={{ opacity: 0, y: 1000 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0 }}
+            transition={{ ...transition, delay: 0.15 }} className='line'
+          />
           <motion.section
             initial={{ opacity: 0, y: 1000 }}
             animate={{ opacity: 1, y: 0 }}
@@ -76,23 +82,11 @@ const SecondJob = ({ onBack }) => {
               <div className='toggle-description-secondJob-card'>
                 <ul className='title-description-text'>
                   <li>
-                    <h2 className='job-title'>Software Engineer Analytic - Mayo 2022 - Present</h2>
+                    <h2 className='job-title'>Frontend Developer - Mayo 2020 - Mayo 2021</h2>
                     <p className='description-job'>
-                      I am in the development department responsible for the design and
-                      maintenance of the web application for Payroll in North America, including Canada and Puerto Rico.
-                      Member of an internationally distributed team that works applying an agile (Scrum) development.
-                    </p>
-                    <p className='description-job'>
-                      Different technologies and tools to achieve the objectives where needed: Node Js,
-                      React Js, JavaScript, TypeScript, AWS, GitHub, SQL Server,
-                      CSS, HTML, Git, Active Directory and others
-                    </p>
-                  </li>
-                  <li>
-                    <h2 className='job-title'>Software Engineer Associate - Mayo 2021 - Mayo 2022</h2>
-                    <p className='description-job'>
-                      I started at Accenture as a Jr. Software Engineer (full stack)
-                      for the development department.
+                      Frontend developer working as a freelance implementing web design and mobile development applying agile methodology (Scrum).
+                      In this position I have applied the knowledge acquired throughout my career as a software engineer using the latest technologies.
+                      In charge of UX/UI development and frontend technology implementation.
                     </p>
                   </li>
                 </ul>
@@ -107,7 +101,7 @@ const SecondJob = ({ onBack }) => {
             transition={{ ...transition, delay: 0.3 }}
             className='toggle-secondJob-card-3'
           >
-            <div className='TechSection-section-container'>
+            <div className='expertise-section-container'>
               <h2 className='title-expertise-section'>TechStack</h2>
             </div>
             <div className='expertise-section-description-container'>

@@ -144,7 +144,6 @@
     justify-content: center;
     align-items: center;
     color:#403C3C;
-    background-color: violet;
   }
 
   .toggle-description-thirdJob-card {
@@ -177,6 +176,7 @@
 
   .description-job {
     margin-left: 2%;
+    margin-right: 10%;
   }
 
   .title-expertise-section {

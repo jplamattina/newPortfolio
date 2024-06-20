@@ -82,9 +82,9 @@ const FirstJob = ({ onBack }) => {
               <div className='toggle-description-firstJob-card'>
                 <ul className='title-description-text'>
                   <li>
-                    <h2 className='job-title'>Software Engineer Analytic - Mayo 2022 - Present</h2>
+                    <h2 className='job-title'>Software Engineer Analyst - Mayo 2021 - Present</h2>
                     <p className='description-job'>
-                      I am in the development department responsible for the design and
+                      Full stack software engineer in the development department responsible for the design and
                       maintenance of the web application for Payroll in North America, including Canada and Puerto Rico.
                       Member of an internationally distributed team that works applying an agile (Scrum) development.
                     </p>
