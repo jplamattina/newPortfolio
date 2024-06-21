@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react'
 import '../tilesMenu/tiles.css'
 import { Karantina } from 'next/font/google'
 import Image from 'next/image'
-import face from './../../../assests/face.svg'
+import face from './../../../assests/face-2.svg'
 import faceShadow from './../../../assests/face-shadow.svg'
 
 const karantina = Karantina({

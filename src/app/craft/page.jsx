@@ -3,9 +3,9 @@
 import React, { useEffect, useState } from 'react'
 import { Karantina, Roboto } from 'next/font/google'
 import Image from 'next/image'
-import face from './../../assests/face.svg'
+import face from './../../assests/face-2.svg'
 import './craft.css'
-import Link from 'next/link'
+import Profile from './../components/about/Profile'
 
 const karantina = Karantina({
   weight: ['300', '400', '700'],
@@ -20,10 +20,19 @@ const roboto = Roboto({
 })
 
 const Craft = () => {
+  const [selectedProfile, setSelectedProfile] = useState('developer')
   const [time, setTime] = useState(new Date())
 
   const clockTime = time.toString()
   const formattedTime = clockTime.slice(16, 24)
+
+  const handleProfile = (profile) => {
+    console.log('profile:', profile)
+    setSelectedProfile(profile)
+  }
+  const goBack = () => {
+    setSelectedProfile('developer')
+  }
 
   useEffect(() => {
     const intervalId = setInterval(() => {
@@ -41,33 +50,51 @@ const Craft = () => {
           </div>
         </section>
         <main className='main-craft-container'>
-          <section className='top-section-craft'>
-            <div className={`title-number-1  ${karantina.className}`}><h1>Developer</h1></div>
-            <div className={`title-number-2  ${karantina.className}`}><h1>01</h1></div>
-          </section>
-          <section className='main-section-face-title'>
-            <Link className='link-architect' href='/craft/architect'>
-              <button className={`button-about ${karantina.className}`}>{'<'}</button>
-            </Link>
-            <div className='face-section-container'>
-              <div className='circle-background'>
-                <Image
-                  src={face}
-                  className='handleFace'
-                  id='handleFaceProfessional'
-                  alt='contacto'
-                />
-              </div>
-            </div>
-            <div className={`description-1  ${karantina.className}`}>
-              <h1 className='principal-title'>+3 YEARS EXP</h1>
-              <h1 className='second-titles'>EDUCATION</h1>
-              <h2 className='second-titles-descriptions'>IT MASTER ACADEMY</h2>
-            </div>
-            <Link className='link-architect' href='/craft/architect'>
-              <button className={`button-about ${karantina.className}`}>{'>'}</button>
-            </Link>
-          </section>
+          <>
+            {selectedProfile === 'developer'
+              ? (
+                <>
+                  <section className='top-section-craft'>
+                    <div className={`title-number-1 ${karantina.className}`}>
+                      <h1>Developer</h1>
+                    </div>
+                    <div className={`title-number-2 ${karantina.className}`}>
+                      <h1>01</h1>
+                    </div>
+                  </section>
+                  <section className='main-section-face-title'>
+                    <button
+                      className={`button-about ${karantina.className}`}
+                      onClick={() => handleProfile('architect')}
+                    >
+                      {'<'}
+                    </button>
+                    <div className='face-section-container'>
+                      <div className='circle-background'>
+                        <Image
+                          src={face}
+                          className='handleFace'
+                          id='handleFaceProfessional'
+                          alt='contacto'
+                        />
+                      </div>
+                    </div>
+                    <div className={`description-1 ${karantina.className}`}>
+                      <h1 className='principal-title'>+3 YEARS EXP</h1>
+                      <h1 className='second-titles'>EDUCATION</h1>
+                      <h2 className='second-titles-descriptions'>IT MASTER ACADEMY</h2>
+                    </div>
+                    <button
+                      className={`button-about ${karantina.className}`}
+                      onClick={() => handleProfile('architect')}
+                    >
+                      {'>'}
+                    </button>
+                  </section>
+                </>
+                )
+              : <Profile onBack={goBack} />}
+          </>
         </main>
       </div>
     </div>
