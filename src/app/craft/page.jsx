@@ -82,7 +82,18 @@ const Craft = () => {
                     <div className={`description-1 ${karantina.className}`}>
                       <h1 className='principal-title'>+3 YEARS EXP</h1>
                       <h1 className='second-titles'>EDUCATION</h1>
-                      <h2 className='second-titles-descriptions'>IT MASTER ACADEMY</h2>
+                      <ul className='second-titles-descriptions'>
+                        <li>IT MASTER ACADEMY</li>
+                        <ul className='second-titles-descriptions'>
+                          <li>Full Stack developer career</li>
+                          <li>Java - course</li>
+                        </ul>
+                        <li>CODER HOUSE</li>
+                        <ul className='second-titles-descriptions'>
+                          <li>Backend Programming I: Advanced Backend Development</li>
+                          <li>React Native</li>
+                        </ul>
+                      </ul>
                     </div>
                     <button
                       className={`button-about ${karantina.className}`}
