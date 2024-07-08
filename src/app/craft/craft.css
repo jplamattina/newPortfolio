@@ -17,7 +17,6 @@
     margin: 0 auto;
     padding: 0.2rem;
     width: 100%;
-    background-color: blue;
   }
 
   .color-text{
@@ -29,7 +28,6 @@
     width: 100%;
     height: 100%;
     border-radius: 22px;
-    background-color: rgb(131, 138, 136);
   }
 
   .main-craft-container {
@@ -38,28 +36,18 @@
     flex-direction: column;
   }
   
-   
+/*    
   .circle-background {
     width: 850px;
     height: 850px;
     background-color: #6E4B4B;
     border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .handleFace {
-    width: 800px;
-    height:900px;
-    margin-top: 25vh;
-    transform: scaleX(-1);
-  }
+    box-shadow: 1px 35px 26px rgba(0, 0, 0, 0.3);
+   } */
 
    .top-section-craft{
     width: 100%;
     height: 15%;
-    background-color: aqua;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -90,12 +78,14 @@
 
   .face-section-container{
     width: 78%;
-    background-color: aquamarine;
+    height: 100%;
     display: flex;
     justify-content: flex-end;
+    position: relative;
   }
   .main-section-face-title {
     width: 100%;
+    height: 100%;
     display: flex;
     justify-content: space-between;
   }
@@ -103,21 +93,25 @@
   .description-1 {
     width: 22%;
     height: 100%;
-    background-color: red;
   }
 
   .principal-title {
     font-size: 65px;
+    color:#403C3C;
   }
 
   .second-titles {
     font-size: 45px;
+    color:#403C3C;
   }
 
   .second-titles-descriptions {
     font-size: 35px;
     font-weight: lighter;
+    list-style-type: none;
+    padding: 0;
     margin-left: 30px;
+    color:#403C3C;
   }
 
 .button-about  {
@@ -129,3 +123,105 @@
 .link-architect {
   display: flex;
 }
+
+.third-titles-descriptions {
+  list-style-type: none;
+  padding: 0;
+  margin-left: 30px;
+}
+
+.third-titles-descriptions li::before {
+  content: "-";
+  margin-right: 8px;
+}
+
+ :root {
+  --level-one: translateZ(3rem);
+  --level-two: translateZ(6rem);
+  --level-three: translateZ(9rem);
+  
+  --fw-normal: 400;
+  --fw-bold: 700;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.card {
+  width: 400px;
+}
+
+.card-circle-background {
+    width: 850px;
+    height: 1040px;
+    background-color: #FCF7E8;
+    text-align: center;
+    position: relative;
+    padding: 15em 5em;
+    transition: transform 1.5s;
+    transform-style: preserve-3d;
+}
+
+.face-section-container .is-flipped {
+  transform: rotateY(0.5turn);
+}
+
+.card__front,
+.card__back {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 5em 3em;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  display: grid;
+  align-content: center;
+}
+
+.card__front {
+  /*background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/308367/fair.jpg);*/
+  width: 850px;
+  height: 850px;
+  background-size: cover;
+  background-blend-mode: overlay;
+  color: #333;
+  background-color: #6E4B4B;
+  box-shadow: 1px 35px 26px rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+}
+
+.handleFace {
+  width: 800px;
+  height:900px;
+  margin-top: 28vh;
+  transform: scaleX(-1);
+  transform: var(--level-three);
+  text-transform: uppercase;
+  margin-left: 10px;
+}
+
+.handleFaceArc {
+  width: 800px;
+  height:950px;
+  margin-top: 21vh;
+  transform: var(--level-three);
+  text-transform: uppercase;
+}
+
+.card__back {
+  /*background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/308367/fair.jpg);*/
+  width: 850px;
+  height: 850px;
+  background-size: cover;
+  background-blend-mode: overlay;
+  color: #333;
+  background-color: #6E4B4B;
+  box-shadow: 1px 35px 26px rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  transform: rotateY(.5turn);
+}
+
