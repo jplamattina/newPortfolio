@@ -6,6 +6,7 @@ import { Roboto, Karantina } from 'next/font/google'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 import Accenture from './../../../../assests/job/Accenture.svg'
+import AssetsArchitect from '../AssetsArchitect'
 
 const roboto = Roboto({
   weight: ['300', '400', '700'],
@@ -102,7 +103,13 @@ const ThirdJob = ({ onBack }) => {
               <h2 className='title-expertise-section'>TechStack</h2>
             </div>
             <div className='expertise-section-description-container'>
-              <p>ACA VAN TODO EL STADCK DE TECH</p>
+              <ul className='wrapper-third-job'>
+                {AssetsArchitect.map((item, index) => (
+                  <li key={index}>
+                    <Image className={`item-third-job item-third-job${index + 1}`} src={item} alt={`icon-${index}`} />
+                  </li>
+                ))}
+              </ul>
             </div>
           </motion.section>
         </main>

@@ -67,7 +67,7 @@ const Works = () => {
                 <div className='toggle-title-card'>
                   <div className='titles-desc'>
                     <h1 className='title-work'>Accenture</h1>
-                    <h2 className='subtitle-work'>Software Engineer Analytic</h2>
+                    <h2 className='subtitle-work'>Software Engineer Analyst</h2>
                   </div>
                 </div>
                 <div className='toggle-button-card'>
