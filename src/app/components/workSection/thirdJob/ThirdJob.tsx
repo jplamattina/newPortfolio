@@ -77,14 +77,32 @@ const ThirdJob = ({ onBack }) => {
               <div className='toggle-description-thirdJob-card'>
                 <ul className='title-description-text'>
                   <li>
-                    <h2 className='job-title'>Architect - Feb 2018 - Present</h2>
+                    <h2 className='job-title'>Construction Manager Architect - Feb 2018 - May 2020</h2>
                     <p className='description-job'>
                       - Carrying out projects and inspection of work in the
                       Green Centers.
+                      - Technical decisions for the realization of the work according to the designed plans.
+                      - Execution of detailed plans, calculation and budget,
+                      public tenders, work start protocols and proyect.
+                    </p>
+                  </li>
+                  <li>
+                    <h2 className='job-title'>Technical Office Architect - Jan 2016 - Feb 2018</h2>
+                    <p className='description-job'>
                       - Technical assistance to industrial engineers for the
                       execution of Recycling Plants.
                       - Execution of detailed plans, calculation and budget,
-                      public tenders, work start protocols, proyect and
+                      public tenders, work start protocols and proyect.
+                    </p>
+                  </li>
+                  <li>
+                    <h2 className='job-title'>Estudio Materia- Feb 2016 - Jan 2016</h2>
+                    <p className='description-job'>
+                      - Participation in the National Competition of Preliminary Projects
+                      1000 Housing Units -Villa 20- CABA and 2nd National Competition
+                      1000 Housing -Villa 20- CABA.
+                      <p className='description-job'>- Development of documentation and sustainable design.</p>
+                      <p className='description-job'> - 3D modeling and construction detailing.</p>
                     </p>
                   </li>
                 </ul>

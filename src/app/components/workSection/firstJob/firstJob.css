@@ -1,6 +1,6 @@
 .viewport-container-work{
     width: 100rem;
-    height: 93%;
+    height: 100%;
   }
 
   .main-header-work{
@@ -194,7 +194,7 @@
     color:#403C3C;
   }
 
-  .wrapper {
+  .wrapper-first-job {
     width: 90%;
     height: 115px;
     max-width: 1440px;
@@ -211,7 +211,7 @@
     );
   }
 
-  .item {
+  .item-first-job {
     width: 100px;
     height: 115px;
     position: absolute;
@@ -228,48 +228,48 @@
   }
 }
 
-.item1 {
+.item-first-job1 {
   animation-delay: calc(30s / 15 * (15 - 1) * -1);
 }
-.item2 {
+.item-first-job2 {
   animation-delay: calc(30s / 15 * (15 - 2) * -1);
 }
-.item3 {
+.item-first-job3 {
   animation-delay: calc(30s / 15 * (15 - 3) * -1);
 }
-.item4 {
+.item-first-job4 {
   animation-delay: calc(30s / 15 * (15 - 4) * -1);
 }
-.item5 {
+.item-first-job5 {
   animation-delay: calc(30s / 15 * (15 - 5) * -1);
 }
-.item6 {
+.item-first-job6 {
   animation-delay: calc(30s / 15 * (15 - 6) * -1);
 }
-.item7 {
+.item-first-job7 {
   animation-delay: calc(30s / 15 * (15 - 7) * -1);
 }
-.item8 {
+.item-first-job8 {
   animation-delay: calc(30s / 15 * (15 - 8) * -1);
 }
-.item9 {
+.item-first-job9 {
   animation-delay: calc(30s / 15 * (15 - 9) * -1);
 }
-.item10 {
+.item-first-job10 {
   animation-delay: calc(30s / 15 * (15 - 10) * -1);
 }
-.item11 {
+.item-first-job11 {
   animation-delay: calc(30s / 15 * (15 - 11) * -1);
 }
-.item12 {
+.item-first-job12 {
   animation-delay: calc(30s / 15 * (15 - 12) * -1);
 }
-.item13 {
+.item-first-job13 {
   animation-delay: calc(30s / 15 * (15 - 13) * -1);
 }
-.item14 {
+.item-first-job14 {
   animation-delay: calc(30s / 15 * (15 - 14) * -1);
 }
-.item15{
+.item-first-job15{
   animation-delay: calc(30s / 15 * (15 - 15) * -1);
 }

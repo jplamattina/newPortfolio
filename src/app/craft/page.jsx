@@ -6,6 +6,7 @@ import Image from 'next/image'
 import face from './../../assests/face-2.svg'
 // import faceInverted from './../../assests/face-inverted.svg'
 import faceArchitect from './../../assests/face-architect.svg'
+import move from '../../assests/gif/move-foward.gif'
 import './craft.css'
 
 const karantina = Karantina({
@@ -34,7 +35,7 @@ const Craft = () => {
     <div className={`container-craft ${karantina.className}`}>
       <div className={`viewport-container-craft ${roboto.className}`}>
         <section className='main-header-craft'>
-          <div className='main-header'>
+          <div className='main-header-craft'>
             <h2 className='color-text'>Profile</h2>
           </div>
         </section>
@@ -53,11 +54,9 @@ const Craft = () => {
                   </section>
                   <section className='main-section-face-title'>
                     <div className='button-section'>
-                      <button
-                        className={`button-about ${karantina.className}`}
-                      >
-                        <p className='button-text' onClick={() => handleProfile('architect')}>{'<'}</p>
-                      </button>
+                      <div className={`button-about text-change-profile ${karantina.className}`} onClick={() => handleProfile('architect')}>
+                        <Image className='move-backward' src={move} alt='gift' />
+                      </div>
                     </div>
                     <div className='face-section-container'>
                       <div className={`card-circle-background ${isFlipped ? 'is-flipped' : ''}`}>
@@ -96,12 +95,9 @@ const Craft = () => {
                       </ul>
                     </div>
                     <div className='button-section'>
-                      <button
-                        className={`button-about ${karantina.className}`}
-                        onClick={() => handleProfile('architect')}
-                      >
-                        <p className='button-text'>{'<'}</p>
-                      </button>
+                      <div className={`button-about ${karantina.className}`} onClick={() => handleProfile('architect')}>
+                        <Image className='move-foward' src={move} alt='gift' />
+                      </div>
                     </div>
                   </section>
                 </>
@@ -118,12 +114,9 @@ const Craft = () => {
                   </section>
                   <section className='main-section-face-title'>
                     <div className='button-section'>
-                      <button
-                        className={`button-about ${karantina.className}`}
-                        onClick={() => handleProfile('developer')}
-                      >
-                        <p className='button-text'>{'<'}</p>
-                      </button>
+                      <div className={`button-about ${karantina.className}`} onClick={() => handleProfile('developer')}>
+                        <Image className='move-backward' src={move} alt='gift' />
+                      </div>
                     </div>
                     <div className='face-section-container'>
                       <div className={`card-circle-background ${isFlipped ? 'is-flipped' : ''}`}>
@@ -156,12 +149,9 @@ const Craft = () => {
                       </ul>
                     </div>
                     <div className='button-section'>
-                      <button
-                        className={`button-about ${karantina.className}`}
-                        onClick={() => handleProfile('developer')}
-                      >
-                        <p className='button-text'>{'<'}</p>
-                      </button>
+                      <div className={`button-about ${karantina.className}`} onClick={() => handleProfile('developer')}>
+                        <Image className='move-foward' src={move} alt='gift' />
+                      </div>
                     </div>
                   </section>
                 </>

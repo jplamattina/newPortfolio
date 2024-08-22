@@ -118,10 +118,10 @@ const FirstJob = ({ onBack }) => {
               <h2 className='title-expertise-section'>TechStack</h2>
             </div>
             <div className='expertise-section-description-container'>
-              <ul className='wrapper'>
+              <ul className='wrapper-first-job'>
                 {AssetsWork.map((item, index) => (
                   <li key={index}>
-                    <Image className={`item item${index + 1}`} src={item} alt={`icon-${index}`} />
+                    <Image className={`item-first-job item-first-job${index + 1}`} src={item} alt={`icon-${index}`} />
                   </li>
                 ))}
               </ul>
